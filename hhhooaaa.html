@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>actidad</title>
+	<style>
+		.boton1{
+position: absolute;
+top: 80px;
+left: 300px;
+height:70px;
+width:150px;
+background:red;
+color: black;
+align-content: center;
+background-color: rgb(49,250,250);
+		}
+		.papitas{
+			position: absolute;
+top: 190px;
+left: 10px;
+height:70px;
+width:150px;
+background:red;
+color: black;
+align-content: center;
+background-color: rgb(49,250,250);
+
+		}
+		.chocolatina{
+			position: absolute;
+top: 210px;
+left: 10px;
+height:50px;
+width:150px;
+background:red;
+color: black;
+align-content: center;
+background-color: rgb(49,250,250);
+
+
+		}
+
+		.doritos{
+			position: absolute;
+top: 230px;
+left: 10px;
+height:5px;
+width:150px;
+background:red;
+color: black;
+align-content: center;
+background-color: rgb(49,250,250);
+		}
+		.info{
+position: absolute;
+top: 260px;
+left: 10px;
+height:35px;
+width:150px;
+background:red;
+color: black;
+align-content: center;
+background-color: rgb(49,250,250);
+		}
+
+	</style>
+</head>
+<body background="fondo.jpg">
+<body>
+<form>
+<h2><label>La tienda de juanita</label></h2>
+<div><input type="text" id="producto" placeholder="producto"></div>	
+<div><input type="text" id="cantidad" placeholder="cantidad"></div>
+<div><input type="text" id="precio" placeholder="precio"></div>
+<div><input type="text" id="midinero" placeholder="mi dinero" class="p1"></div>
+
+<div class="info">(solo hay 10 productos de cada uno)</div>
+<div class="papitas">papitas=3500</div>
+<div class="chocolatina ">chocolatina=2500</div>
+<div class="doritos">doritos=1500</div>
+
+</form>
+
+<div class="boton1" onclick="calcu()" id="control"></div>
+
+<script>
+function calcu()  {
+x=Number(cantidad.value)
+y=Number(precio.value)
+z=Number(midinero.value)
+a=(producto.value)
+		
+		resu=x*y
+		holi=resu-z
+		control.innerHTML="compraste:"+a+"y debes pagar:"+resu+"y su devuelta es:"+holi
+	}
+ 
+</script>
+
+
+
+</body>
+</html>
